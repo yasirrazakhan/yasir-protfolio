@@ -1,0 +1,344 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #424242;
+}
+
+
+/*
+*
+*
+*
+Header of the Page
+*
+*
+*
+ */
+
+ .container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(10, 10%);
+	grid-template-rows: [row1-start] 25% [row1-end] 25% [third-line] auto [fourth-line] auto [last-line] auto;
+}
+
+.header {
+	width: 100%;
+	grid-column-start: 2;
+	grid-column-end: 10;
+}
+
+.logo {
+	width: 40px;
+	padding-top: 30px;
+	position: relative;
+	top: 12px;
+
+
+
+}
+
+.header h1 {
+  	float: right;
+  	display: inline-block;
+  	position: relative;
+  	font-size: 1.7em;
+  	top: 40px;
+  	font-weight: 200;
+
+}
+
+.header h2 {
+	text-align: right;
+	font-weight: 200;
+	position: relative;
+	font-size: 1em;
+	top: -10px;
+}
+.bottom-border {
+	border-bottom: .189em solid #7d97ad;
+	align-self: center;
+	grid-column-start: 2;
+	grid-column-end: 9;
+}
+
+.header-main {
+
+}
+
+
+.banner-images {
+	width: 100%;
+}
+
+ .banner {
+ 	width: 100%;
+ 	grid-column-start: 1;
+	grid-column-end: 11;
+	padding-top: 10px;
+ }
+
+
+/*
+*
+*
+*
+ Featured Work
+ *
+ *
+ *
+ */
+
+.feature-txt-h1 {
+	width: 100%;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #7d97ad;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+/*
+*
+*
+*
+Project Section
+*
+*
+*
+*/
+
+.projects {
+	width: 100%;
+	grid-column-start: 1;
+	grid-column-end: 11;
+}
+
+.project-image {
+	width: 100%
+}
+ figure {
+ 	padding-top: 10px;
+ 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+	border-radius: 5px 5px 5px 5px;
+	border: 0px solid #000000;
+
+
+}
+ figcaption {
+	font-weight: bold;
+	font-size: 1em;
+	color: #2d3c49;
+	text-align: center;
+	padding-top: 10px;
+
+}
+
+.figcaption-3 {
+	padding-top: 48px;
+
+}
+.figcaption-2 {
+	padding-top: 35px;
+}
+.project-figure-1 {
+	width: 100%;
+	display: flex;
+
+}
+.project-figure-2 {
+	width: 100%;
+	display: flex;
+
+}
+.project-figure-3 {
+	width: 100%;
+	display: flex;
+
+}
+.feature-projects {
+	width: 100%;
+}
+
+.project-link {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.project-link:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+ .link-hover a:hover {
+	color: #0077BD;
+	text-decoration: underline;
+}
+
+/*
+*
+*
+*
+ Footer
+ *
+ *
+ *
+ */
+
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: .8em;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 11;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+  align-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1em;
+}
+
+footer li a:hover {
+	color: #02b3e4;
+}
+
+/*
+*
+*
+*
+Responsive Design
+*
+*
+*
+*/
+
+@media screen and (min-width: 650px){
+	.logo {
+	width: 60px;
+	padding-top: 20px;
+	position: relative;
+	top: 12px;
+}
+
+.header h1 {
+  	float: right;
+  	display: inline-block;
+  	position: relative;
+  	font-size: 2em;
+  	top: 40px;
+  	font-weight: 500;
+
+}
+
+.header h2 {
+	text-align: right;
+	font-weight: 300;
+	position: relative;
+	font-size: 1.2em;
+	top: -10px;
+}
+
+figcaption {
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 10px;
+	color: #2d3c49;
+}
+
+.feature-txt-h1 {
+	font-weight: bold;
+	font-size: 1.8em;
+	text-align: center;
+	padding-top: 10px;
+	color: #7d97ad;
+}
+footer li {
+
+	font-size: 1.2em;
+}
+}
+
+@media screen and (min-width: 850px){
+
+	.projects {
+		grid-column-start: 2;
+		grid-column-end: 10;
+	}
+
+	.feature-txt-h1 {
+		width: 100%;
+		font-weight: bold;
+		color: #7d97ad;
+		font-size: 1.6em;
+		text-align: center;
+		padding-top: 10px;
+	}
+
+	.banner {
+		grid-column-start: 2;
+		grid-column-end: 10;
+	}
+	.feature-projects {
+		display: flex;
+	}
+	figure {
+		margin-left: 4px;
+		margin-right: 4px;
+
+	}
+	.header h1 {
+  	float: right;
+  	display: inline-block;
+  	position: relative;
+  	font-size: 2.5em;
+  	top: 40px;
+  	font-weight: 300;
+
+}
+
+	.header h2 {
+	text-align: right;
+	font-weight: 300;
+	position: relative;
+	font-size: 1.5em;
+	top: -10px;
+}
+
+	footer li {
+	font-size: 1.2em;
+}
+	figcaption {
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 10px;
+	color: #2d3c49;
+}
+
+}
+
